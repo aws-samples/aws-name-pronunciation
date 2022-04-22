@@ -1,17 +1,56 @@
-## My Project
+# aws-name-pronounication
 
-TODO: Fill this README out!
+## Requirements
+- Node.js 16.14.0
+- AWS CDK 2.16.0
+- Configured aws credentials
+- Docker daemon running
 
-Be sure to:
+## Folder structure
 
-* Change the title in this README
-* Edit your repository description on GitHub
+- /cdk - code to deploy the solution 
+- /pronounce_app - React application created with the create-react-app tool.
 
-## Security
 
-See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more information.
+## Deployment
+- Clone git repository
 
-## License
+    `git clone {repo}/aws-name-pronounication`
 
-This library is licensed under the MIT-0 License. See the LICENSE file.
+- Run the following commands in your terminal window:
 
+    `cd aws-name-pronounication/pronounce_app`
+
+    `npm install`
+
+    `npm run build`
+
+    `cd ../cdk`
+
+    `npm install`
+
+    `npm run build`
+
+    `cdk bootstrap`
+
+    `cdk deploy ApiStack --outputs-file ../pronounce_app/src/config.json`
+
+    `cd ../pronounce_app`
+
+    `npm run build`
+
+    `cd ../cdk`
+
+    `cdk deploy FrontendStack`
+
+- After successful deployment you will see output variable
+
+    **CloudFront React App URL** - for React App stored on S3
+
+- To clean-up the created resources run
+
+    `cd ../cdk`
+
+    `cdk destroy ApiStack`
+    
+    `cdk destroy FrontendStack`

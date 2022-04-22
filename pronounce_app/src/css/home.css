@@ -1,0 +1,106 @@
+.Home {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 10%;
+  min-height: 92vh;
+  background-color: #f0f0f0;
+}
+
+.mainApp {
+  max-width: 1100px;
+  border-style: solid;
+  border-width: 1px;
+  margin: auto;
+  display: block;
+  padding: 20px;
+  text-align: center;
+  background-color: white;
+}
+.nameInput {
+  display: block;
+}
+
+.nameInput-top {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.nameInput-col1 {
+  padding: 10px;
+  margin: auto;
+  text-align: center;
+}
+.nameInput-col2 {
+  font-size: 20px;
+  padding: 10px;
+  background-color: #ecf2f9;
+  margin: auto;
+  display: block;
+  flex-basis: 500px;
+}
+
+
+.col2-input {
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.col2-input label {
+  width: 30%;
+}
+.col2-input input {
+  flex-basis: 300px;
+  width: 100%;
+}
+.playButton {
+  margin: auto;
+}
+
+
+.nameInput-bottom {
+  display: block;
+}
+
+.nameInput-bottom-row {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+
+}
+.nameInput-bottom-column {
+  width: 25%;
+  padding: 10px;
+  margin: auto;
+  display: inline;
+  flex-basis: 250px;
+}
+
+
+
+
+.nameInput label {
+  padding: 5px;
+  text-align: left;
+}
+
+.btn-primary {
+  font-size: 30px;
+  background-color: #527FFF !important;
+}
+.btn-outline-primary {
+  border-width: 3px !important;
+  font-weight: bold !important;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary, .btn-primary:active:focus {
+    color: #527FFF !important;
+    background-color: transparent !important;
+    border-color: #527FFF !important; /*set the color you want here*/
+}
+
+
+.dropdown-menu.show {
+  max-height: 200px;
+  overflow-x: hidden;
+}
