@@ -15,7 +15,7 @@
 ## Deployment
 - Clone git repository
 
-    `git clone {repo}/aws-name-pronounication`
+    `git clone https://github.com/aws-samples/aws-name-pronunciation
 
 - Run the following commands in your terminal window:
 
