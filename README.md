@@ -19,7 +19,7 @@
 
 - Run the following commands in your terminal window:
 
-    `cd aws-name-pronounication/pronounce_app`
+    `cd aws-name-pronunciation/pronounce_app/`
 
     `npm install`
 
